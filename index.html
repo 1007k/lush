@@ -33,7 +33,7 @@
             top: 0px;
             background-color: white;
             
-            z-index: 100;
+            z-index: 99;
 
             
         }
@@ -53,20 +53,16 @@
 
 
 
-
         .quick{
-            display: flex;
             flex-direction: column;
             position: fixed;
             right: 10px;
             top: 300px;
 
-            background-color: transparent            ;
-
-            height: 210px;
-            width: 70px;
+            background-color: transparent;
 
             z-index: 99;
+
         }
 
         .quick > div{
@@ -76,10 +72,39 @@
         }
 
         .quick > div > a > img{
-            width: 60px;
-            height: 60px;
+            width: 50px;
+            height: 50px;
 
             border-radius: 70px;
+        }
+
+        .quick > div > a > img{
+            width: 50px;
+            height: 50px;
+
+            border-radius: 70px;
+        }
+
+        .store{
+            position: relative;
+        }
+
+        .store:hover .qr-code{
+            visibility: visible;
+        }
+
+        .qr-code{
+            width: 100px;
+            height: 200px;
+            background-color: white;
+            position: absolute;
+            left: -280%;
+            top: -190%;
+            visibility: hidden;
+            padding-left: 30px;
+            padding-right: 50px;
+            padding-top: 20px;
+            padding-bottom: 80px;
         }
 
         .banner{
@@ -312,10 +337,10 @@
 
         .donation{
             display: flex;
-            justify-content: space-around;
+            justify-content: space-evenly;
             height: 300px;
 
-            padding-left: 50px;
+            padding-left: 100px;
             margin-top: 100px;
         }
         
@@ -368,12 +393,16 @@
         
         <div class="quick"><!-- 퀵메뉴 -->
             <div>
-                <a  href="">
+                <a  href="https://pf.kakao.com/_VEbUM/chat?uuid=%40njm0mjywmsvfqiu" target="_blank">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/KakaoTalk_logo.svg" alt=""></a>
             </div>
-            <div>
+            <div class="store">
                 <a href="">
                 <img src="./resources/images/index/shop.webp" alt=""></a>
+                <div class="qr-code">
+                    
+                    <img src="./resources/images/store.png" alt="">
+                </div>
             </div>
             <div>
                 <a href="">
