@@ -210,8 +210,26 @@
             color: white;
         }
 
-        .store:hover{
+        .store{
+            position: relative;
+        }
 
+        .store:hover .qr-code{
+            visibility: visible;
+        }
+
+        .qr-code{
+            width: 100px;
+            height: 200px;
+            background-color: white;
+            position: absolute;
+            left: -280%;
+            top: -190%;
+            visibility: hidden;
+            padding-left: 30px;
+            padding-right: 50px;
+            padding-top: 20px;
+            padding-bottom: 80px;
         }
 
     </style>
@@ -362,6 +380,10 @@
         <div class="store">
             <a href="">
             <img src="./resources/images/index/shop.webp" alt=""></a>
+            <div class="qr-code">
+                
+                <img src="./resources/images/store.png" alt="">
+            </div>
         </div>
         <div>
             <a href="">
