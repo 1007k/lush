@@ -95,6 +95,11 @@
     list-style: none;
     padding: 25px 0px;
 }
+
+.spa-a-tag{
+    text-decoration: none;
+}
+
 .spa-card-container{
     display: grid;
     overscroll-behavior-inline: contain;
@@ -108,7 +113,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 1224px;
+    width: 1490px;
     height: 100%;
 }
 
